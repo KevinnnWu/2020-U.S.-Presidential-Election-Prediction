@@ -99,7 +99,7 @@ final_result <- sum(result_by_state$state_result)/total_vote
 
 ```{r, include=FALSE}
 kable(summary(model)$coeff) %>%
-  kable_styling(full_width = F)
+  kable_styling(latex_options = c("hold_position"), full_width = F)
 ```
 __Figure 1:__ Key statistical summaries of the logistic regression model. \
 
